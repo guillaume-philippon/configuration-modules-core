@@ -29,7 +29,7 @@ type ${project.artifactId}_sites = {
 
 type ${project.artifactId}_component = {
     include structure_component
-    'sites' : ${project.artifactId}_sites{} ?= nlist()
+    'sites' : ${project.artifactId}_sites{} = nlist()
 };
 
 bind '/software/components/${project.artifactId}' = ${project.artifactId}_component;
