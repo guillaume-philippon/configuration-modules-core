@@ -9,7 +9,7 @@ include { 'quattor/schema' };
 
 type ${project.artifactId}_livestatus = {
     'enable' : boolean = true
-    'port' : int : 6557
+    'port' : int = 6557
 };
 
 type ${project.artifactId}_config = {
